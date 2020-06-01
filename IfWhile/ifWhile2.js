@@ -25,7 +25,7 @@ while(num <= i){
             console.log ('Par')
         }
     }else {
-        if(ehPrimo){
+        if(ehPrimo == true){
         console.log('impar e primo')
         }else {
             console.log('Impar')
