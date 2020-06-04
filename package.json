@@ -1,0 +1,30 @@
+{
+  "name": "logica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "comparaNumeros.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fasam-imc-calc": "^0.0.4",
+    "is-odd": "^3.0.1",
+    "median": "^0.0.2",
+    "prime-number": "^1.0.2",
+    "readline-sync": "^1.4.10",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phelipee25/logica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phelipee25/logica/issues"
+  },
+  "homepage": "https://github.com/Phelipee25/logica#readme"
+}

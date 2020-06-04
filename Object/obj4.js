@@ -7,12 +7,12 @@ function devolveCarro() {
     carro.cor = rs.question('Escoha a cor do seu automovel: ');
     return carro;
 }
-// var automovel = devolveCarro();
-// console.log("Seu automovel é um", automovel.marca, "de modelo", automovel.modelo, "de cor", automovel.cor);
-// var automovelEmString = JSON.stringify(automovel);
-// var caminhoDoArquivo = './data/carro.json';
-// fs.writeFileSync(caminhoDoArquivo, automovelEmString);
-// console.log(carro)
+var automovel = devolveCarro();
+console.log("Seu automovel é um", automovel.marca, "de modelo", automovel.modelo, "de cor", automovel.cor);
+var automovelEmString = JSON.stringify(automovel);
+var caminhoDoArquivo = './data/carro.json';
+fs.writeFileSync(caminhoDoArquivo, automovelEmString);
+console.log(carro)
 function abreGaragem(caminhoObj, fs) {
     // var caminhoObj = "data/carro.json"
     var objDes = fs.readFileSync(caminhoObj)
@@ -21,11 +21,11 @@ function abreGaragem(caminhoObj, fs) {
 }
 function fechaGaragem(garagem, caminhoDoArquivo, fs) {
     var garagemjson = JSON.stringify(garagem);
-    // var caminhoDoArquivo = 'data/carro.json';
+    var caminhoDoArquivo = 'data/carro.json';
     fs.writeFileSync(caminhoDoArquivo, garagemjson);
 }
 var caminhoJson = "carro.json"
-// var caminhoJson = rs.question('Digite o caminho do arquivo: ')
+var caminhoJson = rs.question('Digite o caminho do arquivo: ')
 var garagem = abreGaragem(caminhoJson, fs);
 while (true) {
     var resp = rs.keyInYN('Voce deseja adicionar outro carro ? : ')
