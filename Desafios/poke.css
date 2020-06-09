@@ -1,0 +1,23 @@
+#corpo {
+    background-color: rgb(128, 255, 255);
+    text-align: center;
+}
+#dex {
+    align-content: center;
+    height: 450px;
+    width: 650px;
+}
+@Font-Face{
+    font-family: "Pokemon Solid";
+    src: url("fonts/Pokemon\ Solid.ttf")
+    
+}
+
+#cabecalho1{
+    font-family: "Pokemon Solid";
+    color: yellow;
+    font-size: 50px;
+    font-style: italic;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
