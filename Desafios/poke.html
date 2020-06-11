@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="poke.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokemonPHAPI</title>
 </head>
+
 <body id="corpo">
     <h1 id="cabecalho1">Super PokeDex</h1>
     <hr>
-    <div id="posicionamento">
-    <button id="chamaPKM" onclick="chamapkm()"></button>
+    <div>
+        <div><button id="confirma">O</button></div>
+        <div id="posicionamentoRight">
+            <button id="chamaPKM" onclick="chamapkm()">→</button>
+        </div>
+        <div id="posicionamentoLeft">
+            <button id="chamaPKM" onclick="chamapkm()">←</button>
+        </div>
+        <div id="posicionamentoTop">
+            <button id="chamaPKM" onclick="chamapkm()">↑</button>
+        </div>
+        <div id="posicionamentoDown">
+            <button id="chamaPKM" onclick="chamapkm()">↓</button>
+        </div>
+        <img id="dex" src="pokedexnova.png">
+        <input id="busca" type="text" placeholder="Digite ID Aqui">
     </div>
-    <img id="dex" src="pokedexnova.png">
-
 
 
     <script type="text/javascript" src="poke.js"></script>
 </body>
+
 </html>

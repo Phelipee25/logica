@@ -6,7 +6,13 @@ const fs = require('fs')
 // let urlTipo = 'https://pokeapi.co/api/v2/type/'
 // let urlHabilidade = 'https://pokeapi.co/api/v2/ability/'
 
-let pkm = rs.question('Digite o nome ou id do pokemon que quer consultar: ')
+// let pkm = rs.question('Digite o nome ou id do pokemon que quer consultar: ')
+let pkm = document.getElementById("busca").nodeValue;
+pkm.addEventListener("keydown", function(event){
+    if (event.keyCode === 13){
+        console.log(pkm);
+    }
+});
 
 // async function pegaNomePKM() {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${pkm}`)
@@ -59,24 +65,30 @@ let pkm = rs.question('Digite o nome ou id do pokemon que quer consultar: ')
                     .then((resposta) => {
                         let tipoDano = resposta.data
                         let danos = tipoDano.damage_relations
+                        let dobroDe = []
+                        let dobroEm = []
+                        let metadeDe = []
+                        let metadeEm = []
+                        let zeroDe = []
+                        let zeroEm = []
                         setTimeout((x)=>{
                             for(let i = 0; i < danos.double_damage_from.length; i++){
-                                console.log("esse pokemon recebe o dobro de dano de " + danos.double_damage_from[i].name)
+                                dobroDe.push(danos.double_damage_from[i].name)
                             }
                             for(let i = 0; i < danos.double_damage_to.length; i++){
-                                console.log("esse pokemon causa o dobro de dano em " + danos.double_damage_to[i].name)
+                                dobroEm.push(danos.double_damage_to[i].name)
                             }
                             for(let i = 0; i < danos.half_damage_from.length; i++){
-                                console.log("esse pokemon recebe a metade de dano de " + danos.half_damage_from[i].name)
+                                metadeDe.push(danos.half_damage_from[i].name)
                             }
                             for(let i = 0; i < danos.half_damage_to.length; i++){
-                                console.log("esse pokemon causa metade de dano em " + danos.half_damage_to[i].name)
+                                metadeEm.push(danos.half_damage_to[i].name)
                             }
                             for(let i = 0; i < danos.no_damage_from.length; i++){
-                                console.log("esse pokemon recebe zero de dano de " + danos.no_damage_from[i].name)
+                                zeroDe.push(danos.no_damage_from[i].name)
                             }
                             for(let i = 0; i < danos.no_damage_to.length; i++){
-                                console.log("esse pokemon causa zero de dano em " + danos.no_damage_to[i].name)
+                                zeroEm.push(danos.no_damage_to[i].name)
                             }
                         }, 3000)
                     })
