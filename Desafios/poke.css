@@ -22,38 +22,38 @@
     -webkit-text-stroke-color: black;
 }
 
-#posicionamentoRight{
+/* #posicionamentoRight{
     position: absolute;
-    /* top:35em;
-    left:39.5em; */
+    top:35em;
+    left:39.5em;
     top: 90.1%;
     left: 46.7%;
     transform: translate(-50%, -50%);
 }
 #posicionamentoLeft{
     position: absolute;
-    /* top:35em;
-    left:39.5em; */
+    top:35em;
+    left:39.5em;
     top: 90.1%;
     left: 43.8%;
     transform: translate(-50%, -50%);
 }
 #posicionamentoTop{
     position: absolute;
-    /* top:35em;
-    left:39.5em; */
+    top:35em;
+    left:39.5em;
     top: 86.9%;
     left: 45.3%;
     transform: translate(-50%, -50%);
 }
 #posicionamentoDown{
     position: absolute;
-    /* top:35em;
-    left:39.5em; */
+    top:35em;
+    left:39.5em;
     top: 93%;
     left: 45.3%;
-    transform: translate(-50%, -50%);
-}
+    transform: translate(-50%, -50%); */
+/* } */
 #chamaPKM{
     background: transparent;
     border: none;
@@ -75,4 +75,34 @@
     position: absolute;
     top: 84.5%;
     left: 31.6%;
+}
+#sprite{
+    position: absolute;
+    top: 55%;
+    left: 36%;
+    width: 150px;
+    height: 150px;
+}
+#nomePKM{
+    font-family: "Pokemon Solid";
+    width: 100px;
+    position: absolute;
+    top: 54%;
+    left: 31.5%;
+}
+#type{
+    text-align: left;
+    font-family: "Pokemon Solid";
+    width: 100px;
+    position: absolute;
+    top: 54%;
+    left: 55%;
+}
+#ability{
+    text-align: left;
+    font-family: "Pokemon Solid";
+    width: 100px;
+    position: absolute;
+    top: 60%;
+    left: 55%;
 }

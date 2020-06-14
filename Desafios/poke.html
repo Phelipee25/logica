@@ -12,25 +12,35 @@
     <h1 id="cabecalho1">Super PokeDex</h1>
     <hr>
     <div>
-        <div><button id="confirma">O</button></div>
-        <div id="posicionamentoRight">
-            <button id="chamaPKM" onclick="chamapkm()">→</button>
+        <div><img id="dex" src="pokedexnova.png">
+            <div><input id="busca" type="text" placeholder="Digite ID Aqui">
+                <div><img id="sprite" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/088.png">
+                    <div><p id="nomePKM">Grimmer</p>
+                        <div><p id="ability">Habilidades</p>
+                        <div><p id="type">Tipos</p>
+                        <div><button id="confirma" onclick="confirmaChamada()">O</button>
+                            <div id="posicionamentoRight">
+                                <!-- <button id="chamaPKM" onclick="chamapkm()">→</button> -->
+                                <div id="posicionamentoLeft">
+                                    <!-- <button id="chamaPKM" onclick="chamapkm()">←</button> -->
+                                    <div id="posicionamentoTop">
+                                        <!-- <button id="chamaPKM" onclick="chamapkm()">↑</button> -->
+                                        <div id="posicionamentoDown">
+                                            <!-- <button id="chamaPKM" onclick="chamapkm()">↓</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="posicionamentoLeft">
-            <button id="chamaPKM" onclick="chamapkm()">←</button>
-        </div>
-        <div id="posicionamentoTop">
-            <button id="chamaPKM" onclick="chamapkm()">↑</button>
-        </div>
-        <div id="posicionamentoDown">
-            <button id="chamaPKM" onclick="chamapkm()">↓</button>
-        </div>
-        <img id="dex" src="pokedexnova.png">
-        <input id="busca" type="text" placeholder="Digite ID Aqui">
     </div>
 
 
     <script type="text/javascript" src="poke.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
 </html>

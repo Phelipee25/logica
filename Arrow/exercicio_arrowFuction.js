@@ -10,16 +10,16 @@ var json = fs.readFileSync('car.json')
 var cars = JSON.parse(json)
 
 
-// var rs = require('readline-sync')
-// var num = rs.questionInt( 'digite um numero ')
+var rs = require('readline-sync')
+var num = rs.questionInt( 'digite um numero ')
 
-// var potencia = cars.filter( (n) => n.Horsepower > num)
+var potencia = cars.filter( (n) => n.Horsepower > num)
 
-// console.log(potencia.length)
+console.log(potencia.length)
 
 
-// var origem = cars.filter( (o) => o.Origin == "Japan") 
+var origem = cars.filter( (o) => o.Origin == "Japan") 
 
-// console.log(origem.length)
+console.log(origem.length)
 
 var marca = cars.includes('Ford')

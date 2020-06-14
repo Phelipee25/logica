@@ -6,5 +6,4 @@ var maior = 0
 
 
 while (num != -1) {
-    
-    
+}
