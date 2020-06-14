@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de DOM</title>
+</head>
+<body>
+    <h1>Cabeçalho para Exercicio</h1>
+
+    <hr>
+    <button onclick = "quebraFrase()">Quebra Frase</button>
+
+    <script>
+        function quebraFrase(){
+            let frase = prompt('insere aqui sua frase').split(' ')
+            let ul = document.createElement('ul')
+            for(let i=0; i<frase.length; i++){
+                let li = document.createElement('li')
+                li.innerText = frase[i]
+                ul.append(li)
+            }
+            document.body.append(ul)
+        }
+    </script>
+</body>
+</html>
